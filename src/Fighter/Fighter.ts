@@ -7,10 +7,7 @@ export default interface IFighter {
   energy?: IEnergy;
   
   attack(enemy: IFighter): void;
-
   special?(enemy: IFighter): void;
-
   levelUp(): void;
-
   receiveDamage(attackPoints: number): number;
 }
