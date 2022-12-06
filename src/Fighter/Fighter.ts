@@ -1,4 +1,5 @@
 import IEnergy from '../Energy';
+import SimpleFighter from './SimpleFighter';
 
 export default interface IFighter {
   lifePoints: number;
@@ -6,7 +7,7 @@ export default interface IFighter {
   defense: number;
   energy?: IEnergy;
   
-  attack(enemy: IFighter): void;
+  attack(enemy: SimpleFighter): void;
   special?(enemy: IFighter): void;
   levelUp(): void;
   receiveDamage(attackPoints: number): number;
